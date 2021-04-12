@@ -1,0 +1,17 @@
+.center-vertical-horizontal {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+
+.height500scrollable {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.height500 {
+  height: 500px;
+}
