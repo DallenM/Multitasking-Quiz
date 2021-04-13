@@ -6,7 +6,7 @@
     "questions": [
         {
             "id": "01",
-            "questionText": "What color Bordeaux was served first??",
+            "questionText": "What color Bordeaux was served first?",
             "answerOptions": [
                 { "answerText": "White", "isCorrect": false },
                 { "answerText": "Red", "isCorrect": true },
