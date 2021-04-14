@@ -5,17 +5,20 @@ import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Redirect } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
 
 function Questions(props) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questions = data[0].reading.questions[currentQuestion];
   const answers = questions ? questions.answerOptions : null;
   const nextQuestion = currentQuestion + 1;
+  let updatedScore = props.userScore + 1;
 
   function selectedAnswer(param) {
     if (param.isCorrect) {
-      props.setUserScore(props.userScore + 1);
+      updatedScore += 1;
+      props.setUserScore(updatedScore);
+      props.setCorrectQuestions([...props.correctQuestions, questions]);
     }
     nextQuestionFunc();
   }
@@ -25,9 +28,7 @@ function Questions(props) {
   }
 
   //if necessary return a redirect (if no next question)
-  if (nextQuestion <= answers.length) {
-    console.log("next" + nextQuestion);
-    console.log("last" + answers.length);
+  if (answers != null) {
     return (
       <Col>
         <Row md={1} lg={1} className="text-center">
@@ -35,28 +36,35 @@ function Questions(props) {
         </Row>
         <Row md={1} lg={1} className="p-5">
           <ListGroup className="height100">
-            <ListGroup.Item action onClick={() => selectedAnswer(answers[0])}>
+            <ListGroup.Item
+              id="1"
+              action
+              onClick={() => selectedAnswer(answers[0])}
+            >
               {answers[0].answerText}
             </ListGroup.Item>
-            <ListGroup.Item action onClick={() => selectedAnswer(answers[1])}>
+            <ListGroup.Item
+              id="2"
+              action
+              onClick={() => selectedAnswer(answers[1])}
+            >
               {answers[1].answerText}
             </ListGroup.Item>
-            <ListGroup.Item action onClick={() => selectedAnswer(answers[2])}>
+            <ListGroup.Item
+              id="3"
+              action
+              onClick={() => selectedAnswer(answers[2])}
+            >
               {answers[2].answerText}
             </ListGroup.Item>
-            <ListGroup.Item action onClick={() => selectedAnswer(answers[3])}>
+            <ListGroup.Item
+              id="4"
+              action
+              onClick={() => selectedAnswer(answers[3])}
+            >
               {answers[3].answerText}
             </ListGroup.Item>
           </ListGroup>
-        </Row>
-        <Row md={1}>
-          <Col className="d-flex justify-content-center">
-            <ButtonGroup aria-label="Basic example">
-              <Button variant="primary" onClick={nextQuestionFunc}>
-                Next
-              </Button>
-            </ButtonGroup>
-          </Col>
         </Row>
       </Col>
     );

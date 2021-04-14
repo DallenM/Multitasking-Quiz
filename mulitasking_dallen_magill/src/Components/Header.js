@@ -1,6 +1,8 @@
 import "../Styles/Header.css";
-import { Row, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
+import React from "react";
+import "../myStyles.css";
 
 function TitleBlock() {
   return (
@@ -13,22 +15,30 @@ function TitleBlock() {
 
 function Header() {
   return (
-    <header>
-      <nav>
-        <Row>
-          <Col md="10">
-            <Breadcrumb style={{ alignContent: "center" }}>
-              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-              <Breadcrumb.Item href="/Quiz">Quiz Page</Breadcrumb.Item>
-              <Breadcrumb.Item href="/QuizScore">Quiz Results</Breadcrumb.Item>
-            </Breadcrumb>
-          </Col>
-          <Col md="6">
-            <TitleBlock />
-          </Col>
-        </Row>
-      </nav>
-    </header>
+    <React.Fragment>
+      <Col className="sidemargins15px">
+        <Breadcrumb
+          style={{ alignContent: "center" }}
+          className="toppadding15px centerandfitbreadcrumb"
+        >
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="/Quiz">Quiz Page</Breadcrumb.Item>
+          <Breadcrumb.Item href="/QuizScore">Quiz Results</Breadcrumb.Item>
+        </Breadcrumb>
+      </Col>
+      <Col className="verticalpadding15px">
+        <TitleBlock/>
+      </Col>
+      <Col></Col>
+    </React.Fragment>
+
+    // <Container>
+    //   <Col>
+    //   </Col>
+    //   <Col>
+    //     <TitleBlock />
+    //   </Col>
+    // </Container>
   );
 }
 

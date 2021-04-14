@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 
 function QuizIntro(props) {
   return (
-    <Container>
+    <Container className="automargintb">
       <Row>
         <Col>
           <Card style={{ width: "100%" }}>

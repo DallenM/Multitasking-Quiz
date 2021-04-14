@@ -10,37 +10,57 @@ import Footer from "./Components/Footer";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./myStyles.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { useState } from "react";
 
 function App() {
-
   const [userScore, setUserScore] = useState(-1);
   const [totalQuestions] = useState(data[0].reading.questions.length);
+  const [correctQuestions, setCorrectQuestions] = useState([]);
 
   return (
     <Router>
       <Container className="p-0 min-vh-100 d-flex flex-column" fluid>
-        <Row noGutters className="flex-grow-0 flex-shrink-0 shadow-sm">
-          <Col className="px-3 py-2" style={{ backgroundColor: "#146520", color: "black" }}>
-            <Header />
-          </Col>
+        <Row
+          className="flex-grow-0 flex-shrink-0 shadow-sm margins0"
+          style={{ backgroundColor: "#146520", color: "black" }}
+        >
+          <Header />
         </Row>
+        {/* <Row noGutters className="flex-grow-0 flex-shrink-0 shadow-sm">
+          <Col className="px-3 py-2" style={{ backgroundColor: "#146520", color: "black" }}>
+            1 of 2asdfasdf kl;ja sdlkjas d;flkjas d;ljsa d;flj sad;lj asd;l jf
+          {/* <Header /> */}
+        {/* </Col>
+          <Col className="px-3 py-2" style={{ backgroundColor: "#146520", color: "black" }}>
+            2 of 2
+          {/* <Header /> */}
+        {/* </Col> */}
+        {/* </Row> */}
         <Row md="auto" className="justify-content-md-center flex-grow-1">
           <Switch>
             <Route path="/QuizScore">
-              <QuizResults userScore={userScore} totalQuestions={totalQuestions}/>
+              <QuizResults
+                userScore={userScore}
+                totalQuestions={totalQuestions}
+                correctQuestions={correctQuestions}
+              />
             </Route>
             <Route path="/Quiz">
-              <QuizPage userScore={userScore} setUserScore={setUserScore}/>
+              <QuizPage
+                userScore={userScore}
+                setUserScore={setUserScore}
+                setCorrectQuestions={setCorrectQuestions}
+                correctQuestions={correctQuestions}
+              />
             </Route>
             <Route path="/">
-              <QuizIntro/>
+              <QuizIntro />
             </Route>
           </Switch>
         </Row>
         <Row noGutters className="flex-grow-0 flex-shrink-0">
-          <Footer/>
+          <Footer />
         </Row>
       </Container>
     </Router>
