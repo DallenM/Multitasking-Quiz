@@ -1,33 +1,37 @@
-import data from "./Data/data.json";
-import React, { useState } from "react";
+import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
-import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 
 function IncorrectQuestions(props) {
+  function highlightCorrect(param) {
+    let newId = param.id;
+    if (param.isCorrect) {
+      return (
+        <ListGroup.Item id={newId} variant="success">
+          {param.answerText}
+        </ListGroup.Item>
+      );
+    } else {
+      return (
+        <ListGroup.Item id={newId} variant="danger">
+          {param.answerText}
+        </ListGroup.Item>
+      );
+    }
+  }
+
   return (
     <Col>
       <Card>
         <Card.Body>
           <Card.Title>{props.questions.questionText}</Card.Title>
-          <Card.Text>
             <ListGroup className="height100">
-              <ListGroup.Item>
-                {props.questions.answerOptions[0].answerText}
-              </ListGroup.Item>
-              <ListGroup.Item>
-                {props.questions.answerOptions[1].answerText}
-              </ListGroup.Item>
-              <ListGroup.Item>
-                {props.questions.answerOptions[2].answerText}
-              </ListGroup.Item>
-              <ListGroup.Item>
-                {props.questions.answerOptions[3].answerText}
-              </ListGroup.Item>
+              {highlightCorrect(props.questions.answerOptions[0])}
+              {highlightCorrect(props.questions.answerOptions[1])}
+              {highlightCorrect(props.questions.answerOptions[2])}
+              {highlightCorrect(props.questions.answerOptions[3])}
             </ListGroup>
-          </Card.Text>
         </Card.Body>
       </Card>
     </Col>

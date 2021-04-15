@@ -1,23 +1,22 @@
 import data from "./Data/data.json";
 import React, { useState } from "react";
 import ListGroup from "react-bootstrap/ListGroup";
-import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Redirect, useParams } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 function Questions(props) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questions = data[0].reading.questions[currentQuestion];
   const answers = questions ? questions.answerOptions : null;
   const nextQuestion = currentQuestion + 1;
-  let updatedScore = props.userScore + 1;
+
 
   function selectedAnswer(param) {
     if (param.isCorrect) {
-      updatedScore += 1;
-      props.setUserScore(updatedScore);
+      let aVar = incrementScore(props.userScore);
+      props.setUserScore(aVar);
+    } else {
       props.setCorrectQuestions([...props.correctQuestions, questions]);
     }
     nextQuestionFunc();
@@ -25,6 +24,14 @@ function Questions(props) {
 
   function nextQuestionFunc() {
     setCurrentQuestion(nextQuestion);
+  }
+
+  function incrementScore(param) {
+    if (param < 0) {
+      param = 0;
+    }
+    let newScore = param + 1;
+    return newScore;
   }
 
   //if necessary return a redirect (if no next question)

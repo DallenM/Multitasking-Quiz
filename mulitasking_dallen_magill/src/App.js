@@ -22,22 +22,12 @@ function App() {
     <Router>
       <Container className="p-0 min-vh-100 d-flex flex-column" fluid>
         <Row
-          className="flex-grow-0 flex-shrink-0 shadow-sm margins0"
-          style={{ backgroundColor: "#146520", color: "black" }}
+          className="flex-grow-0 flex-shrink-0 shadow-sm margins0 header"
+          // style={{ backgroundColor: "#242582", color: "white" }}
         >
           <Header />
         </Row>
-        {/* <Row noGutters className="flex-grow-0 flex-shrink-0 shadow-sm">
-          <Col className="px-3 py-2" style={{ backgroundColor: "#146520", color: "black" }}>
-            1 of 2asdfasdf kl;ja sdlkjas d;flkjas d;ljsa d;flj sad;lj asd;l jf
-          {/* <Header /> */}
-        {/* </Col>
-          <Col className="px-3 py-2" style={{ backgroundColor: "#146520", color: "black" }}>
-            2 of 2
-          {/* <Header /> */}
-        {/* </Col> */}
-        {/* </Row> */}
-        <Row md="auto" className="justify-content-md-center flex-grow-1">
+        <Row md="auto" className="justify-content-md-center flex-grow-1 introandresultsbackground">
           <Switch>
             <Route path="/QuizScore">
               <QuizResults
@@ -59,7 +49,7 @@ function App() {
             </Route>
           </Switch>
         </Row>
-        <Row noGutters className="flex-grow-0 flex-shrink-0">
+        <Row noGutters className="flex-grow-0 flex-shrink-0 text-center footer">
           <Footer />
         </Row>
       </Container>

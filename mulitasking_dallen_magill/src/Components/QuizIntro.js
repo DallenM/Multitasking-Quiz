@@ -3,7 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-// import { BrowserRouter as Link } from "react-router-dom";
 
 function QuizIntro(props) {
   return (
@@ -18,7 +17,7 @@ function QuizIntro(props) {
                 answer questions. When you are ready, press Next and you will be
                 taken to the next page to begin the quiz.
               </Card.Text>
-              <Button href="/Quiz">Next</Button>
+              <Button href="/Quiz">Begin</Button>
             </Card.Body>
           </Card>
         </Col>

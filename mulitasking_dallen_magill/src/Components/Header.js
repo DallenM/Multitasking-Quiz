@@ -21,9 +21,9 @@ function Header() {
           style={{ alignContent: "center" }}
           className="toppadding15px centerandfitbreadcrumb"
         >
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="/Quiz">Quiz Page</Breadcrumb.Item>
-          <Breadcrumb.Item href="/QuizScore">Quiz Results</Breadcrumb.Item>
+          <Breadcrumb.Item className="whitetext" href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item className="whitetext" href="/Quiz">Quiz Page</Breadcrumb.Item>
+          <Breadcrumb.Item className="whitetext" href="/QuizScore">Quiz Results</Breadcrumb.Item>
         </Breadcrumb>
       </Col>
       <Col className="verticalpadding15px">

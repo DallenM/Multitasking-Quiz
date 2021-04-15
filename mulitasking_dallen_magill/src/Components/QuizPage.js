@@ -10,15 +10,15 @@ import "../myStyles.css";
 
 function QuizPage(props) {
   return (
-    <Container className="quizpagepadding" style={{ backgroundColor: "grey" }} >
+    <Container className="quizpagepadding">
       <Row>
         <Col className="p-50" xs={5} >
-          <Jumbotron className="reading" style={{ backgroundColor: "#949494" }}>
+          <Jumbotron className="reading">
             <Reading />
           </Jumbotron>
         </Col>
         <Col>
-          <Jumbotron style={{ backgroundColor: "#949494" }}>
+          <Jumbotron>
             <Questions
               userScore={props.userScore}
               setUserScore={props.setUserScore}
