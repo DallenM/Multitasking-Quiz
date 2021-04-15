@@ -1,0 +1,51 @@
+[{"reading": {
+    "id": "01",
+    "title": "The Stolen Smell",
+    "subtitle": "A short story by Shreya Sharma",
+    "text": "Long ago, in the city of Lima Peru, there lived a baker. He was so stinky that he wouldn’t e=ven give a stale crumb to the birds. His neighbor, on the other hand, was a kind man who was always glad to share the little he had. He cared more about making friends than he did about making money. The greedy baker was jealous of his cheerful neighbor. He grumbled, “How can he have so little and yet be so happy?” Every morning, the smell of cinnamon buns and sweet rolls drifted out of the bakery. The wind carried the wonderful aroma toward the neighbor’s house. As the poor neighbor sat on his porch eating stale bread, the sweet smell filled the air. He took a deep breath and sighed with happiness. As the baker watched, he thought, “The smell from my baked goods makes his stale bread taste delicious. That’s not fair. He should have to pay for such pleasure.” After seeing this happen, again and again, the baker went to his neighbor’s house and handed him a bill. “You want me to pay you? For what? I don’t have enough money to buy anything in your store,” said the kind neighbor. “That’s right! You pay nothing and yet every day you steal the smell of my baked goods,” yelled the baker. “You mean you want me to pay ten coins as a smelling fee?” laughed the neighbor. “Yes! From now on, I’ll not be cheated and if you don’t pay, I’ll take you to the court,” replied the baker. When word of the baker’s demand spread around the city, everyone laughed at the idea of a stolen smell. “That’s right! You pay nothing and yet every day you steal the smell of my baked goods,” yelled the baker. “You mean you want me to pay ten coins as a smelling fee?” laughed the neighbor. “Yes! From now on, I’ll not be cheated and if you don’t pay, I’ll take you to the court,” replied the baker. When word of the baker’s demand spread around the city, everyone laughed at the idea of a stolen smell. “That’s right! You pay nothing and yet every day you steal the smell of my baked goods,” yelled the baker. “You mean you want me to pay ten coins as a smelling fee?” laughed the neighbor. “Yes! From now on, I’ll not be cheated and if you don’t pay, I’ll take you to the court,” replied the baker. When word of the baker’s demand spread around the city, everyone laughed at the idea of a stolen smell. The next day, the baker and the neighbor arrived at the crowded court. Many townspeople were puzzled by the judge’s actions and came to see what the judge would do. They could not believe that he might make the kind man paying for a smell. When the judge walked in, the courtroom fell silent. First, he listened to the baker’s complaint. Then, he turned to the neighbor and asked, “Is it true that you have enjoyed the smell of this man’s baked goods every day for many years?” “Yes, your honor! I must confess that is true,” admitted the neighbor. The judge thought for a while. Finally, he declared, “A smell has been stolen. Since stealing is a crime, the neighbor must be punished!” The kind man protested, “But your honor…” “Order in the court,” bellowed the judge. He then turned to the neighbor and demanded, “Take the five gold pieces from your pocket!” After the neighbor did so, the judge ordered, “Now, drop the coins from one hand to the other!” The neighbor passed the gold coins back and forth between his hands. The judge turned to the baker and asked, “Did you hear the jingle of the gold coins?” “Yes, I did!” said the baker with a greedy grin. “Did you like the sound?” asked the judge. “Yes, it is a wonderful sound. It is the payment I believe I deserve,” cried the baker. The baker began to move toward his neighbor to grab the money. “Wait!” cried the judge. “You have already a fair payment. Your neighbor was guilty of stealing the smell of your baked goods. You have been paid by hearing the sound of his money. This case is dismissed,” said the judge. Laughter filled the courtroom as the people marveled at the judge’s cleverness. The baker hung his head. Even he saw how foolish and greedy he had been. From then on, the judge was known as the wisest of all, treating people fairly and honestly while also making sure everyone took full responsibility for their actions.",
+    "questions": [
+        {
+            "id": "01",
+            "questionText": "Where did the baker live?",
+            "answerOptions": [
+                { "id": "1", "answerText": "Paris, France", "isCorrect": false },
+                { "id": "2", "answerText": "Lima, Peru", "isCorrect": true },
+                { "id": "3", "answerText": "Buenos Aires, Argentina", "isCorrect": false },
+                { "id": "4", "answerText": "Bogota, Colombia", "isCorrect": false }
+            ]
+        },
+        {
+            "id": "02",
+            "questionText": "What did the baker accuse the neighbor of stealing?",
+            "answerOptions": [
+                { "id": "1", "answerText": "Sweet Rolls", "isCorrect": false },
+                { "id": "2", "answerText": "Large Birthday Cake", "isCorrect": false },
+                { "id": "3", "answerText": "Ham and Cheese Sandwich", "isCorrect": false },
+                { "id": "4", "answerText": "The Smell of his Baked Goods", "isCorrect": true }
+            ]
+        },
+        {
+            "id": "03",
+            "questionText": "How many gold pieces were in the neighbor's pocket?",
+            "answerOptions": [
+                { "id": "1", "answerText": "3", "isCorrect": false },
+                { "id": "2", "answerText": "8", "isCorrect": false },
+                { "id": "3", "answerText": "5", "isCorrect": true },
+                { "id": "4", "answerText": "4", "isCorrect": false }
+            ]
+        },
+        {
+            "id": "04",
+            "questionText": "What was the payment the judge made the neighbor pay to the baker?",
+            "answerOptions": [
+                { "id": "1", "answerText": "5 Gold Pieces", "isCorrect": false },
+                { "id": "2", "answerText": "The Sound of 5 Gold Pieces Moving Hands", "isCorrect": true },
+                { "id": "3", "answerText": "4 Gold Pieces", "isCorrect": false },
+                { "id": "4", "answerText": "The Smell of all his Money", "isCorrect": false }
+            ]
+        }
+    ]
+}}]
+
+
+
